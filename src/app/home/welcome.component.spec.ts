@@ -16,5 +16,14 @@ describe('WelcomeComponent', () => {
       expect(app.pageTitle).toEqual('Welcome');
       //expect(app).toBeTruthy();
     });
+
+    it('truthy test', () => {
+      const fixture = TestBed.createComponent(WelcomeComponent);
+      //const app = fixture.debugElement.componentInstance;
+      const app = fixture.componentInstance;
+      //expect(app.pageTitle).toEqual('Welcome');
+      expect(app).toBeTruthy();
+    });
+
   });
   
